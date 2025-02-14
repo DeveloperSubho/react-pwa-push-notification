@@ -1,5 +1,6 @@
 {
   "name": "react-pwa-push-notification",
+  "homepage": "https://DeveloperSubho.github.io/react-pwa-push-notification",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "start": "set HTTPS=true&&set SSL_CRT_FILE=../cert.crt&&set SSL_KEY_FILE=../cert.key&&react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {

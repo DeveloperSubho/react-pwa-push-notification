@@ -5,12 +5,12 @@ import { initializeApp } from 'firebase/app';
 import { getMessaging, getToken, onMessage } from 'firebase/messaging';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDXt91bxDpsZrF3zYxaKBN27bXaov2G29A",
-    authDomain: "pwa-pushnotification-31d40.firebaseapp.com",
-    projectId: "pwa-pushnotification-31d40",
-    storageBucket: "pwa-pushnotification-31d40.firebasestorage.app",
-    messagingSenderId: "991423945200",
-    appId: "1:991423945200:web:464a215e6ab3b320cde535"
+    apiKey: "AIzaSyAXqNtctv9kYnfCxPLlwctQvzoGMGWM5-E",
+    authDomain: "pwa-push-project.firebaseapp.com",
+    projectId: "pwa-push-project",
+    storageBucket: "pwa-push-project.firebasestorage.app",
+    messagingSenderId: "412520000343",
+    appId: "1:412520000343:web:21998c03f0d081cd982c12"
 };
 
 initializeApp(firebaseConfig);
@@ -20,7 +20,7 @@ const messaging = getMessaging();
 export const requestForToken = () => {
     // The method getToken(): Promise<string> allows FCM to use the VAPID key credential
     // when sending message requests to different push services
-    return getToken(messaging, { vapidKey: `BBxBkkqubsa4ptjsOUqUtWD4nu9H9Mbuaf8grNX1dZYDnwlSttlVAUX-tEK95JTZOBz-cXQN5sGkzzzueq0lAJo` }) //to authorize send requests to supported web push services
+    return getToken(messaging, { vapidKey: `BD5i314iKTkhFP0KOuUyXVzo7rswE2el43VfeY4E4BJT3JMQ8q4OYCcjgFD0AVm1fwBiqoIR-vqbQ-MT2WFM8LU` }) //to authorize send requests to supported web push services
         .then((currentToken) => {
             if (currentToken) {
                 console.log('current token for client: ', currentToken);

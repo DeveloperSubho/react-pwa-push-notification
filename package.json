@@ -18,11 +18,11 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "set NODE_ENV=production&& react-scripts build",
-    "start": "set HTTPS=true&&set SSL_CRT_FILE=../cert.crt&&set SSL_KEY_FILE=../cert.key&&react-scripts start",
+    "start": "set NODE_ENV=development&& react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
